@@ -1,0 +1,61 @@
+ % Packages & Document Configurations
+\documentclass{4620-report}
+
+% Authors & Supervisor
+\firstauthor{Oreoluwa Abejide}
+\secondauthor{Thomas Housley}
+\thirdauthor{Matthew Mehrtens}
+\fourthauthor{Patricia Ovono}
+\fifthauthor{Lucas Tavares Vasconcellos}
+\sixthauthor{Ethan Witt}
+
+\supervisor{Professor Travis Grager}
+
+% Report Title & Subtitle
+\title{Wind Tunnel Data Analysis Report}
+\subtitle{StratoShield}
+
+% Affiliations
+\university{Iowa State University}
+\degree{Aerospace Engineering}
+\school{College of Engineering}
+\course{AERE 4620 Design of Aerospace Systems}
+
+% Locale & Date
+\date{Friday, March 7\textsuperscript{th}, 2025}
+
+% Make and Load Glossary & Acronyms
+\makeglossaries
+\loadglsentries{miscellaneous/00-glossary}
+\loadglsentries[\acronymtype]{miscellaneous/10-acronyms}
+
+\begin{document}
+
+% Covers
+\include{covers/00-cover}
+
+% Roman numeration
+\pagenumbering{roman}
+
+% List of contents, figures, and tables
+\tableofcontents
+\listoffigures
+\listoftables
+
+% Print Glossary & Acronym
+\printglossary
+\printglossary[type=\acronymtype]
+\clearpage
+
+% Arabic numeration
+\pagenumbering{arabic}
+
+% Chapters
+\include{chapters/00-introduction}
+\include{chapters/10-methodology}
+\include{chapters/20-aerodynamics}
+\include{chapters/30-propulsion}
+\include{chapters/35-cg}
+\include{chapters/40-conclusion}
+
+\end{document}
